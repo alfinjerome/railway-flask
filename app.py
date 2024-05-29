@@ -25,9 +25,9 @@ def book():
     return render_template('booking.html')
 
 
-@app.route("/listing")
+@app.route("/trains")
 def list():
-    return render_template('trainlist.html', jobs=JOBS)
+    return render_template('trains.html', jobs=JOBS)
 
 
 @app.route('/api/listing')
